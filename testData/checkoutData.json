@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "rahulshettyacademy",
+      "password": "learning",
+      "product": "Blackberry"
+    },
+    {
+      "username": "rahulshettyacade",
+      "password": "learning",
+      "product": "Nokia Edge"
+    }
+  ]
+}
