@@ -20,26 +20,29 @@ This project automates core e-commerce workflows such as **login, product select
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```text
 ecommerce-automation-framework/
 │
 ├── pageObjects/
-│ ├── loginPage.py
-│ ├── shopPage.py
-│ ├── checkoutPage.py
+│   ├── loginPage.py
+│   ├── shopPage.py
+│   └── checkoutPage.py
 │
 ├── tests/
-│ ├── test_login.py
-│ ├── test_e2e_checkout.py
+│   ├── test_login.py
+│   └── test_e2e_checkout.py
 │
 ├── testData/
-│ └── checkoutData.json
-│
-├── reports/
-│ ├── report.html
-│ └── screenshots/
+│   └── checkoutData.json
 │
 ├── utilities/
-│ └── baseClass.py
+│   └── baseClass.py
+│
+├── reports/
+│   ├── report.html
+│   └── screenshots/
 │
 ├── conftest.py
 ├── pytest.ini
@@ -47,9 +50,7 @@ ecommerce-automation-framework/
 ├── README.md
 └── .gitignore
 
-yaml
-Copy code
-
+```
 ---
 
 ## 🧪 Test Coverage
@@ -70,45 +71,52 @@ Copy code
 ### 1️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+
 2️⃣ Run all tests
-bash
-Copy code
+```
 pytest
+```
+
 3️⃣ Run smoke tests
-bash
-Copy code
+```
 pytest -m smoke
+```
+
 4️⃣ Run regression tests
-bash
-Copy code
+```
 pytest -m regression
+```
+
 5️⃣ Run tests in parallel
-bash
-Copy code
+```
 pytest -n 2
+```
+
 6️⃣ Generate HTML report
-bash
-Copy code
+```
 pytest --html=reports/report.html
+```
+
 📊 Reports & Screenshots
-HTML reports generated using pytest-html
+- HTML reports generated using pytest-html
 
-Screenshots are automatically captured when a test fails
+- Screenshots are automatically captured when a test fails
 
-Reports and screenshots are stored in the reports/ directory
+- Reports and screenshots are stored in the reports/ directory
 
 🧠 Key Framework Features
-Page Object Model for better maintainability
+- Page Object Model for better maintainability
 
-Explicit waits for stable execution
+- Explicit waits for stable execution
 
-JSON-based data-driven testing
+- JSON-based data-driven testing
 
-Cross-browser support
+- Cross-browser support
 
-Clean Git setup with .gitignore
+- Clean Git setup with .gitignore
 
-Scalable and CI-ready framework
+- Scalable and CI-ready framework
 
 👩‍💻 Author
 Anuja Shejwal
@@ -117,21 +125,13 @@ QA Automation Engineer
 🔗 GitHub: https://github.com/anujashejwal
 
 ⭐ Future Enhancements
-GitHub Actions CI integration
+- GitHub Actions CI integration
 
-Allure reporting
+- Allure reporting
 
-Docker-based execution
+- Docker-based execution
 
-API + UI hybrid automation
-
-yaml
-Copy code
+- API + UI hybrid automation
 
 ---
 
-### After pasting, run:
-```bash
-git add README.md
-git commit -m "Add project README"
-git push
